@@ -1,0 +1,23 @@
+#art-c
+{
+    align-self: center;
+    background-color: #1976d2;
+    color: white;
+    align-content: flex-start;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    display: inline-block;
+    border-width: 5px;
+}
+
+#counter
+{
+    float: left;
+}
+
+.parent
+{
+    text-align: center;
+}
