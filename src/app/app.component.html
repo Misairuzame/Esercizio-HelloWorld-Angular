@@ -305,13 +305,17 @@
   <span>Welcome</span>
 
   <!-- Inseriamo il tag button per generare il bottone che porta al componente -->
-  <button id="article-c" [routerLink]="['article-component']" class="btn">
+  <button id="article-c" [routerLink]="['article-component']" class="btn" appHighlightbutton>
     <span>Articolo</span>
   </button>
 
-  <button id="article-c" [routerLink]="['counter-component']" class="btn">
+  <button id="article-c" [routerLink]="['counter-component']" class="btn" appHighlightbutton>
       <span>Counter</span>
   </button>
+
+  <button id="article-c" [routerLink]="['sondaggio-component']" class="btn" appHighlightbutton>
+    <span>Sondaggio</span>
+</button>
 
   <div class="spacer"></div>
   <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">

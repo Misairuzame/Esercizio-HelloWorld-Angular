@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { ProvaComponent } from './prova/prova.component';
 import { CounterComponent } from './counter/counter.component';
+import { HighlightDirective } from './highlight.directive';
+import { HighlightbuttonDirective } from './highlightbutton.directive';
+import { SondaggioComponent } from './sondaggio/sondaggio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticleComponent,
     ProvaComponent,
-    CounterComponent
+    CounterComponent,
+    HighlightDirective,
+    HighlightbuttonDirective,
+    SondaggioComponent
   ],
   imports: [
     BrowserModule,

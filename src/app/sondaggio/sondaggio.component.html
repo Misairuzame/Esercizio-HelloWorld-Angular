@@ -1,0 +1,19 @@
+<div class="parent">
+    <div id = 'art-c'>
+        <h2>Ti sono piaciute le seguenti serie televisive?</h2>
+        <li *ngFor="let serie of serietv; let i = index">
+            <b>{{ serie }}</b>
+            <div id={{i}}>
+                <button (click)="liked(); disableClick(i)">Si</button>
+                <button (click)="disliked(); disableClick(i)">No</button>
+            </div>
+        </li>
+        <br/>
+        <p>
+            <b>Serie piaciute: {{ piaciute }}</b><br/>
+            <b>Serie non piaciute: {{ nonpiaciute }}</b><br/>
+            <b>Ancora da valutare: {{ serietv.length - piaciute - nonpiaciute }}</b>
+        </p>
+        <p *ngIf="serietv.length - piaciute - nonpiaciute == 0"><i>Grazie per aver completato il sondaggio!</i></p>
+    </div>
+</div>

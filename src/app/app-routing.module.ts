@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ArticleComponent } from './article/article.component';
 import { CounterComponent } from './counter/counter.component';
+import { SondaggioComponent } from './sondaggio/sondaggio.component';
 
 const routes: Routes = [{
   path: 'article-component',
@@ -10,6 +11,10 @@ const routes: Routes = [{
 {
   path: 'counter-component',
   component: CounterComponent
+},
+{
+  path: 'sondaggio-component',
+  component: SondaggioComponent
 }];
 
 @NgModule({
